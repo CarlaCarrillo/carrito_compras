@@ -100,11 +100,25 @@
   ],
   "carrito": [
     {
+      "id": 3,
+      "name": "Pata de elefante",
+      "description": "This is item 4",
+      "costo": "5",
+      "imagen": "../Gallery/Planta1.jpg"
+    },
+    {
       "id": 2,
       "name": "Oregano",
       "description": "This is item two",
       "costo": "3",
       "imagen": "../Gallery/Planta3.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Planta de espinaca",
+      "description": "This is item 4",
+      "costo": "12",
+      "imagen": "../Gallery/Planta4.jpg"
     }
   ]
 }

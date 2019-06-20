@@ -19,7 +19,6 @@ const App = () => (
     <Route exact path="/user" component={UserRegister} />
     <Route path="/plantas" component={TiendaPlantas} />
     <Route path="/carrito" component={ShopCar} />
-    <Redirect path="/"/>
   </BrowserRouter>
 )
 
