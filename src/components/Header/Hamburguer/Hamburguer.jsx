@@ -1,29 +1,30 @@
 import React from 'react';
 import { slide as Menu } from 'react-burger-menu'
+import { Link } from 'react-router-dom'
 import './Hamburguer.css'
 
 class Hamburguer extends React.Component {
-  showSettings (event) {
+  showSettings(event) {
     event.preventDefault();
-    
+
   }
 
-  render () {
+  render() {
     return (
       <Menu>
-        <a id="home" className="menu-item" href="/">HOME</a>
+        <Link to="/" >  <a id="home" className="menu-item">HOME</a></Link>
         <a id="principal" className="menu-item">TIENDA</a>
-              <a id="submenu" className="menu-item" href="/plantas">Plantas</a>
-              <a id="submenu" className="menu-item" href="/">Mesas de cultivo</a>
-              <a id="submenu" className="menu-item" href="/">Semillas</a>
-              <a id="submenu" className="menu-item" href="/">Herramientas</a>
+        <Link to="/plantas"> <a id="submenu" className="menu-item">Plantas</a> </Link>
+        <a id="submenu" className="menu-item" href="/">Mesas de cultivo</a>
+        <a id="submenu" className="menu-item" href="/">Semillas</a>
+        <a id="submenu" className="menu-item" href="/">Herramientas</a>
         <a id="principal" className="menu-item">REGALOS</a>
-              <a id="submenu" className="menu-item" href="/regalos">Kit mi primer huerto</a>
-              <a id="submenu" className="menu-item" href="/">Terrarios</a>
-              <a id="submenu" className="menu-item" href="/">Arreglos Macetas</a>
+        <Link to="/regalos"> <a id="submenu" className="menu-item">Kit mi primer huerto</a></Link>
+        <a id="submenu" className="menu-item" href="/">Terrarios</a>
+        <a id="submenu" className="menu-item" href="/">Arreglos Macetas</a>
         <a id="principal" className="menu-item" href="/sucursales">SUCURSALES</a>
 
-        <a onClick={ this.showSettings } className="menu-item--small" href="">Settings</a>
+        <a onClick={this.showSettings} className="menu-item--small" href="">Settings</a>
       </Menu>
     );
   }

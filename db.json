@@ -100,34 +100,11 @@
   ],
   "carrito": [
     {
-      "plantas": {
-        "id": 2,
-        "name": "Oregano",
-        "description": "This is item two",
-        "costo": "3",
-        "imagen": "../Gallery/Planta3.jpg"
-      },
-      "id": 1
-    },
-    {
-      "plantas": {
-        "id": 3,
-        "name": "Pata de elefante",
-        "description": "This is item 4",
-        "costo": "5",
-        "imagen": "../Gallery/Planta1.jpg"
-      },
-      "id": 2
-    },
-    {
-      "plantas": {
-        "id": 1,
-        "name": "Ficus",
-        "description": "This is item One",
-        "costo": "3",
-        "imagen": "../Gallery/Planta2.jpg"
-      },
-      "id": 3
+      "id": 2,
+      "name": "Oregano",
+      "description": "This is item two",
+      "costo": "3",
+      "imagen": "../Gallery/Planta3.jpg"
     }
   ]
 }

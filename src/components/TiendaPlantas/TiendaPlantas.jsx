@@ -24,9 +24,8 @@ class TiendaPlantas extends React.Component {
         this.plantaAgregada = this.plantaAgregada.bind(this);
     }
 
-    componentWillMount() {
+    componentDidMount() {
         getData('plantas').then((plantas) => this.setState({ plantas }));
-        console.log(this.state.plantas);
     }
 
     plantaAgregada(planta) {
@@ -40,18 +39,14 @@ class TiendaPlantas extends React.Component {
                 <Container>
                     <Row>
                         {this.state.plantas.map(
-                            planta => {
-                                return (<Cart plantas={planta} guardada={this.plantaAgregada} />)
-                            }
+                            planta => <Cart plantas={planta} guardada={this.plantaAgregada} isViewingCart={false} />
                         )}
                     </Row>
                 </Container>
                 <Instructions />
                 <ToastContainer />
             </div>
-
         )
-
     }
 
 }

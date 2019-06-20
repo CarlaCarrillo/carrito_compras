@@ -11,28 +11,26 @@ class Cart extends React.Component {
     }
 
     create(data) {
-        console.log(data)
         this.props.guardada(data.plantas);
-        postData('carrito', data).then("this.props.hide").catch(this.showError);
+        postData('carrito', data.plantas).then("this.props.hide").catch(this.showError);
     }
 
     render() {
         return (
-            <>
-                <Col sm={4} md={4}>
-                    <Card id="carta" style={{ width: '14rem' }}>
-                        <Card.Img variant="top" src={this.props.plantas.imagen} alt="242x200" />
-                        <Card.Body>
-                            <Card.Title><h5>{this.props.plantas.name}</h5></Card.Title>
-                            <Card.Text>
-                                <h5>{this.props.plantas.description}</h5>
-                                <h2>$ {this.props.plantas.costo}</h2>
-                            </Card.Text>
-                            <Button variant="outline-success" onClick={() => this.create({ ...this.props })}>Agregar a carrito </Button>
-                        </Card.Body>
-                    </Card>
-                </Col>
-            </>
+            <Col sm={4} md={4}>
+                <Card id="carta" style={{ width: '14rem' }}>
+                    <Card.Img variant="top" src={this.props.plantas.imagen} alt="242x200" />
+                    <Card.Body>
+                        <Card.Title><h5>{this.props.plantas.name}</h5></Card.Title>
+                        <Card.Text>
+                            <h5>{this.props.plantas.description}</h5>
+                            <h2>$ {this.props.plantas.costo}</h2>
+                        </Card.Text>
+                        {this.props.isViewingCart === false && <Button variant="outline-success" onClick={() => this.create({ ...this.props })}>Agregar a carrito </Button>}
+                        {this.props.isViewingCart === true && <Button variant="outline-danger" >Borrar del carrito </Button>}
+                    </Card.Body>
+                </Card>
+            </Col>
         )
     }
 }
