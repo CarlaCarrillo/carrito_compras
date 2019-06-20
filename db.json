@@ -71,69 +71,53 @@
   "plantas": [
     {
       "id": 1,
-      "name": "Item MODIFI",
+      "name": "Ficus",
       "description": "This is item One",
       "costo": "3",
       "imagen": "../Gallery/Planta2.jpg"
     },
     {
       "id": 2,
-      "name": "Item MODIFI",
+      "name": "Oregano",
       "description": "This is item two",
       "costo": "3",
       "imagen": "../Gallery/Planta3.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Pata de elefante",
+      "description": "This is item 4",
+      "costo": "5",
+      "imagen": "../Gallery/Planta1.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Planta de espinaca",
+      "description": "This is item 4",
+      "costo": "12",
+      "imagen": "../Gallery/Planta4.jpg"
     }
   ],
   "carrito": [
     {
       "plantas": {
-        "id": 1,
-        "name": "Item MODIFI",
-        "description": "This is item One",
+        "id": 2,
+        "name": "Oregano",
+        "description": "This is item two",
         "costo": "3",
-        "imagen": "../Gallery/Planta2.jpg"
+        "imagen": "../Gallery/Planta3.jpg"
       },
       "id": 1
     },
     {
       "plantas": {
-        "id": 1,
-        "name": "Item MODIFI",
-        "description": "This is item One",
-        "costo": "3",
-        "imagen": "../Gallery/Planta2.jpg"
+        "id": 3,
+        "name": "Pata de elefante",
+        "description": "This is item 4",
+        "costo": "5",
+        "imagen": "../Gallery/Planta1.jpg"
       },
       "id": 2
-    },
-    {
-      "plantas": {
-        "id": 1,
-        "name": "Item MODIFI",
-        "description": "This is item One",
-        "costo": "3",
-        "imagen": "../Gallery/Planta2.jpg"
-      },
-      "id": 3
-    },
-    {
-      "plantas": {
-        "id": 1,
-        "name": "Item MODIFI",
-        "description": "This is item One",
-        "costo": "3",
-        "imagen": "../Gallery/Planta2.jpg"
-      },
-      "id": 4
-    },
-    {
-      "plantas": {
-        "id": 2,
-        "name": "Item MODIFI",
-        "description": "This is item two",
-        "costo": "3",
-        "imagen": "../Gallery/Planta3.jpg"
-      },
-      "id": 5
     }
   ]
 }
