@@ -118,6 +118,16 @@
         "imagen": "../Gallery/Planta1.jpg"
       },
       "id": 2
+    },
+    {
+      "plantas": {
+        "id": 1,
+        "name": "Ficus",
+        "description": "This is item One",
+        "costo": "3",
+        "imagen": "../Gallery/Planta2.jpg"
+      },
+      "id": 3
     }
   ]
 }
