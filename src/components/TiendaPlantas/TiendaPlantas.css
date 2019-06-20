@@ -1,0 +1,53 @@
+/**Tamaño de carrusel**/
+#carrusel {
+    width: 50%;
+    color: white;
+    font-size: 50%;
+    font-family: 'Pacifico';
+    text-align: center;
+   
+    
+}
+/**Letra de titulos de carrusel**/
+#titulo {
+    color: white;
+    font-size: 200%;
+    font-family: 'Annie Use Your Telescope', cursive;
+    margin-left: -22%;
+    margin-left: 0%;
+   
+    background-color:rgba(34,139,34,0.5);
+    width: 100%;
+    height: 9%;
+    }
+/**Estilos conteneder de carts**/
+    #tarjetas {
+        margin-left: 10%;
+    } 
+/**Estilo de iconos de pie de pagina**/
+    #iconos {
+        width: 50%;
+    }
+/**Estilo contenedor de iconos de pie de página**/
+#cajaiconos {
+    scroll-margin-top: 0%;
+    margin-left: 0%;
+    background: linear-gradient(to right, #56ab2f, #a8e063);
+    width: 100%;
+    text-align: center;
+    padding: 0.5%;
+}
+
+h6 {
+    text-align: center;
+}
+
+#iconos {
+margin-top: 3%;
+}
+
+/**estilo a tamaño de carts**/
+#carta.card {
+    height: 96%;
+    text-align: center;
+}

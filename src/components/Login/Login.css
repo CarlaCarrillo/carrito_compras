@@ -1,0 +1,91 @@
+h3 {
+    font-size: 102%;
+    color: rgb(33, 138, 1);
+}
+
+/**Formato a texto de imagen de fondo**/
+#titulo {
+    color: white;
+    font-size: 180%;
+    font-family: 'Annie Use Your Telescope', cursive;
+    margin-left: -22%;
+    }
+
+
+#contenido {
+    margin-top: 8%;
+    margin-left: -78%;
+    width: 203%;
+    font-size: 30px;
+    font-family: 'Bad Script';
+    color: white;
+    text-align: center;
+ 
+    
+}
+
+#imgfondo {
+    width: 919px;
+    height: 551px;
+    padding: 18px;
+    margin: 10px 0 20px -150px !important;   
+}
+.modal-content {
+    width: 484px;
+    height: 515px;
+    padding: 20px;
+    margin: 10px 0 20px -7px !important;
+    background: linear-gradient(to left, #000000, #434343);
+}
+
+#formBasicPassword {
+    width: 400px;
+    height: 40px;
+}
+#formUsername.form-control {
+    width: 400px;
+    height: 40px;
+}
+.modal-title.h4 {
+    margin-top: 0.4%;
+    margin-right:-10%;
+    font-size: 200%;
+    color:white;
+}
+.form-label {
+    margin-top: 0.4%;
+    margin-right:-10%;
+    font-size: 120%;
+    color:white;
+}
+.btn.btn-primary {
+    background-color: black;
+    border-color: darkgreen;
+    color: green;
+}
+
+/**formato a texto de centro de pantalla**/
+#contenedor{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    
+}
+ 
+#texto-encima{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+#centrado{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+   
+}
+
+
+
+

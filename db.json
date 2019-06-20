@@ -1,0 +1,139 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "User",
+      "lastname": "One",
+      "email": "userOne@mail.com",
+      "username": "user-one",
+      "password": "password"
+    },
+    {
+      "id": 2,
+      "name": "User",
+      "lastname": "Two",
+      "email": "userTwo@mail.com",
+      "username": "user-two",
+      "password": "password"
+    },
+    {
+      "id": 3,
+      "name": "User",
+      "lastname": "Three",
+      "email": "userThree@mail.com",
+      "username": "user-three",
+      "password": "password"
+    },
+    {
+      "id": 4,
+      "name": "User",
+      "lastname": "Four",
+      "email": "userFour@mail.com",
+      "username": "user-four",
+      "password": "password"
+    },
+    {
+      "name": "User",
+      "lastname": "Five",
+      "email": "userFive@mail.com",
+      "username": "user-five",
+      "password": "password",
+      "id": 5
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "name": "Item MODIFI",
+      "description": "This is item One",
+      "value": "3",
+      "Description": "This is item One"
+    },
+    {
+      "id": 2,
+      "name": "Item 1",
+      "description": "This is item Two",
+      "value": 2
+    },
+    {
+      "id": 3,
+      "name": "Item 1",
+      "description": "This is item Three",
+      "value": 3
+    },
+    {
+      "name": "111",
+      "description": "111",
+      "value": "1",
+      "id": 4
+    }
+  ],
+  "plantas": [
+    {
+      "id": 1,
+      "name": "Item MODIFI",
+      "description": "This is item One",
+      "costo": "3",
+      "imagen": "../Gallery/Planta2.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Item MODIFI",
+      "description": "This is item two",
+      "costo": "3",
+      "imagen": "../Gallery/Planta3.jpg"
+    }
+  ],
+  "carrito": [
+    {
+      "plantas": {
+        "id": 1,
+        "name": "Item MODIFI",
+        "description": "This is item One",
+        "costo": "3",
+        "imagen": "../Gallery/Planta2.jpg"
+      },
+      "id": 1
+    },
+    {
+      "plantas": {
+        "id": 1,
+        "name": "Item MODIFI",
+        "description": "This is item One",
+        "costo": "3",
+        "imagen": "../Gallery/Planta2.jpg"
+      },
+      "id": 2
+    },
+    {
+      "plantas": {
+        "id": 1,
+        "name": "Item MODIFI",
+        "description": "This is item One",
+        "costo": "3",
+        "imagen": "../Gallery/Planta2.jpg"
+      },
+      "id": 3
+    },
+    {
+      "plantas": {
+        "id": 1,
+        "name": "Item MODIFI",
+        "description": "This is item One",
+        "costo": "3",
+        "imagen": "../Gallery/Planta2.jpg"
+      },
+      "id": 4
+    },
+    {
+      "plantas": {
+        "id": 2,
+        "name": "Item MODIFI",
+        "description": "This is item two",
+        "costo": "3",
+        "imagen": "../Gallery/Planta3.jpg"
+      },
+      "id": 5
+    }
+  ]
+}
