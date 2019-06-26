@@ -1,39 +1,56 @@
 import React from 'react';
-import { postData } from '../../../components/utils/api'
+import { 
+    postData, 
+    getData,
+    patchData } from '../../../components/utils/api'
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import 'react-toastify/dist/ReactToastify.css';
 
-
-
 class Cart extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            carrito : [],
+            carrito: [],
             clicked: 0,
         }
-      this.limpiarCarrito = this.limpiarCarrito.bind(this);  
+        this.limpiarCarrito = this.limpiarCarrito.bind(this);
+        this.create = this.create.bind(this);
+        this.addNewItemToCart = this.addNewItemToCart.bind(this);
     };
-    
+
+    addNewItemToCart(data) {
+        postData('carrito', data.plantas).then(() => this.props.guardada(data.plantas)).catch((error) => console.log(error));
+    }
+
+    addItemQtyToCart(data) {
+        console.log(data)
+        patchData('carrito', data.id, data).then(() => this.props.guardada(data)).catch((error) => console.log(error));
+    }
 
     create(data) {
-        this.props.guardada(data.plantas);
-        postData('carrito', data.plantas).then("this.props.hide").catch(this.showError);
+        getData(`carrito/${data.plantas.id}`).then(function (response) {
+            if (!Array.isArray(response)) {
+                response.quantity++;
+                this.addItemQtyToCart(response)
+            } else {
+                data.plantas.quantity = 1;
+                this.addNewItemToCart(data)
+            }
+        }.bind(this))
     }
- 
-   limpiarCarrito = (id) => {
-       console.log(this.state);
-    const newState = this.state;
-    const index = newState.carrito.findIndex(a => a.id === id);
+    limpiarCarrito = (id) => {
+        console.log(this.state);
+        const newState = this.state;
+        const index = newState.carrito.findIndex(a => a.id === id);
 
-    if (index === -1) return;
-    newState.carrito.splice(index, 1);
+        if (index === -1) return;
+        newState.carrito.splice(index, 1);
 
-    this.setState(newState); // This will update the state and trigger a rerender of the components
-  }
-  
+        this.setState(newState); // This will update the state and trigger a rerender of the components
+    }
+
 
     render() {
         return (

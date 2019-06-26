@@ -32,59 +32,54 @@ class Item extends Component {
   }
 
   increaseClick() {
-    this.setState({clicked: this.state.clicked + 1});
+    this.setState({ clicked: this.state.clicked + 1 });
   }
 
   decreaseClick() {
-    this.setState({clicked: this.state.clicked - 1});
+    this.setState({ clicked: this.state.clicked - 1 });
   }
 
-  
+
 
   editItem() {
-    this.setState({editing: true});
+    this.setState({ editing: true });
   }
 
   closeModal() {
-    this.setState({editing: false});
+    this.setState({ editing: false });
     this.props.updateList();
   }
 
-  removeItem(){
-      deleteData('carrito',this.props.id).then(this.props.updateList).catch(console.log);
+  removeItem() {
+    deleteData('carrito', this.props.id).then(this.props.updateList).catch(console.log);
   }
 
   render() {
-    const {id, name, description, costo,imagen,quantity} = this.props;
+    const { id, name, description, costo, imagen, quantity } = this.props;
     return (
-       
-      <Row id='cartas'>
-        <Col sm={4} md={4}>
-        <Container style={{ marginTop: '2rem', marginBottom: '2rem' }}>     
-        <Card id="carta" style={{ width: '14rem' }}>
-        <Card.Img variant="top" src={imagen} alt="242x200" />
-        <Card.Body>
-        <Card.Title><h4>{name}</h4></Card.Title>
-        <Card.Text>
-          <h6>{description}</h6>
-          <h2>$ {costo} .00</h2> 
-          <h2> {quantity} </h2>   
-        </Card.Text>
-  
-        <p className='botonCantidad' >
-        <Button  id='botonCantidadmas' variant="dark" onClick={this.decreaseClick}>-</Button> 
-        {this.state.clicked}
-        <Button  id='botonCantidadmenos' variant="dark" onClick={this.increaseClick}>+</Button>
-        </p><p/>
-        
-        <Button id='botonRemove' variant="dark" onClick={this.removeItem}>Quitar</Button>
-        </Card.Body>
-        </Card>
+      <Col sm={4} md={4}>
+        <Container style={{ marginTop: '2rem', marginBottom: '2rem' }}>
+          <Card id="carta" style={{ width: '14rem' }}>
+            <Card.Img variant="top" src={imagen} alt="242x200" />
+            <Card.Body>
+              <Card.Title><h4>{name}</h4></Card.Title>
+              <Card.Text>
+                <h6>{description}</h6>
+                <h2>$ {costo * quantity} .00</h2>
+                <h2> {quantity} </h2>
+              </Card.Text>
+
+              <p className='botonCantidad' >
+                <Button id='botonCantidadmas' variant="dark" onClick={this.decreaseClick}>-</Button>
+                {this.state.clicked}
+                <Button id='botonCantidadmenos' variant="dark" onClick={this.increaseClick}>+</Button>
+              </p><p />
+
+              <Button id='botonRemove' variant="dark" onClick={this.removeItem}>Quitar</Button>
+            </Card.Body>
+          </Card>
         </Container>
-        </Col> 
-        </Row>
-        
-        
+      </Col>
     );
   }
 }
