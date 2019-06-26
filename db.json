@@ -60,65 +60,116 @@
       "name": "Item 1",
       "description": "This is item Three",
       "value": 3
-    },
-    {
-      "name": "111",
-      "description": "111",
-      "value": "1",
-      "id": 4
     }
   ],
   "plantas": [
     {
       "id": 1,
       "name": "Ficus",
-      "description": "This is item One",
-      "costo": "3",
-      "imagen": "../Gallery/Planta2.jpg"
+      "description": "Planta de sombra ideal para interiores. Compra protegida",
+      "costo": "45",
+      "imagen": "../Gallery/Planta2.jpg",
+      "quantity": ""
     },
     {
       "id": 2,
       "name": "Oregano",
-      "description": "This is item two",
-      "costo": "3",
-      "imagen": "../Gallery/Planta3.jpg"
+      "description": "Planta de sombra ideal para interiores. Compra protegida",
+      "costo": "50",
+      "imagen": "../Gallery/Planta3.jpg",
+      "quantity": ""
     },
+    {
+      "id": 3,
+      "name": "Pata de elefante",
+      "description": "Planta de sombra ideal para interiores. Compra protegida",
+      "costo": "120",
+      "imagen": "../Gallery/Planta1.jpg",
+      "quantity": ""
+    },
+    {
+      "id": 4,
+      "name": "Planta de espinaca",
+      "description": "Planta de sombra ideal para interiores. Compra protegida",
+      "costo": "34",
+      "imagen": "../Gallery/Planta4.jpg",
+      "quantity": ""
+    },
+    {
+      "id": 5,
+      "name": "Planta de tomate",
+      "description": "Planta de sombra ideal para interiores. Compra protegida",
+      "costo": "40",
+      "imagen": "../Gallery/Planta5.jpg",
+      "quantity": ""
+    },
+    {
+      "id": 6,
+      "name": "Planta de espinaca",
+      "description": "Planta de sombra ideal para interiores. Compra protegida",
+      "costo": "90",
+      "imagen": "../Gallery/Planta6.jpg",
+      "quantity": ""
+    }
+  ],
+  "carritodos": [
     {
       "id": 3,
       "name": "Pata de elefante",
       "description": "This is item 4",
       "costo": "5",
-      "imagen": "../Gallery/Planta1.jpg"
+      "imagen": "../Gallery/Planta1.jpg",
+      "quantity": ""
     },
     {
-      "id": 4,
-      "name": "Planta de espinaca",
-      "description": "This is item 4",
+      "id": 5,
+      "name": "Planta de tomate",
+      "description": "This is item 5",
       "costo": "12",
-      "imagen": "../Gallery/Planta4.jpg"
+      "imagen": "../Gallery/Planta5.jpg",
+      "quantity": ""
     }
   ],
   "carrito": [
     {
-      "id": 3,
-      "name": "Pata de elefante",
-      "description": "This is item 4",
-      "costo": "5",
-      "imagen": "../Gallery/Planta1.jpg"
+      "id": 1,
+      "name": "Ficus",
+      "description": "Planta de sombra ideal para interiores. Compra protegida",
+      "costo": "3",
+      "imagen": "../Gallery/Planta2.jpg",
+      "quantity": ""
     },
     {
       "id": 2,
       "name": "Oregano",
-      "description": "This is item two",
+      "description": "Planta de sombra ideal para interiores. Compra protegida",
       "costo": "3",
-      "imagen": "../Gallery/Planta3.jpg"
+      "imagen": "../Gallery/Planta3.jpg",
+      "quantity": ""
+    },
+    {
+      "id": 3,
+      "name": "Pata de elefante",
+      "description": "Planta de sombra ideal para interiores. Compra protegida",
+      "costo": "5",
+      "imagen": "../Gallery/Planta1.jpg",
+      "quantity": ""
     },
     {
       "id": 4,
       "name": "Planta de espinaca",
-      "description": "This is item 4",
+      "description": "Planta de sombra ideal para interiores. Compra protegida",
       "costo": "12",
-      "imagen": "../Gallery/Planta4.jpg"
+      "imagen": "../Gallery/Planta4.jpg",
+      "quantity": ""
+    },
+    {
+      "id": 6,
+      "name": "Planta de espinaca",
+      "description": "Planta de sombra ideal para interiores. Compra protegida",
+      "costo": "12",
+      "imagen": "../Gallery/Planta6.jpg",
+      "quantity": ""
     }
   ]
 }

@@ -1,6 +1,18 @@
+#Plantae {
+    margin-left: 0px;
+    font-size: 120%;
+    font-family: 'Bad Script';
+    }
+
+
 h3 {
     font-size: 102%;
     color: rgb(33, 138, 1);
+}
+
+h2 {
+    color: white;
+    margin-left: 2%;
 }
 
 /**Formato a texto de imagen de fondo**/
@@ -75,7 +87,7 @@ h3 {
 #texto-encima{
     position: absolute;
     top: 10px;
-    left: 10px;
+    left: 5px;
 }
 #centrado{
     position: absolute;
@@ -85,7 +97,11 @@ h3 {
     
    
 }
+/*Estilo contenedor de titulo de pagina: Plantae*/
+#titulo.container {
+    background-color:rgba(0, 0, 0, 0.4);
+    width: 50%;
 
-
+}
 
 

@@ -14,13 +14,13 @@ class Fondopantalla extends Component {
         </div>
         <div id="centrado" className="texto encima">
           <Container id="titulo">
-          <h1>Plantae</h1>
+          <h8 id="Plantae">Plantae</h8  >
           </Container>
           <Container id="contenido">
-          <h2>Para los amantes de las plantas, aquí encontrarás 
+          <h7>Para los amantes de las plantas, aquí encontrarás 
           macetas con
            diseños únicos para regalar a esas personas especiales en tu vida.
-          También podrás encontrar todo lo necesario para comenzar tu propio huerto urbano.</h2>
+          También podrás encontrar todo lo necesario para comenzar tu propio huerto urbano.</h7>
           </Container>
         </div>
       </div>

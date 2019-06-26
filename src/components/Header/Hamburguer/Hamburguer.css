@@ -5,16 +5,17 @@
     height: 30px;
     left: 36px;
     top: 16px;
+    
   }
   
   /* Color/shape of burger icon bars */
   .bm-burger-bars {
-    background: #ffffff;
+    background: #F0FFFF;
   }
   
   /* Color/shape of burger icon bars on hover*/
   .bm-burger-bars-hover {
-    background: #027c2a;
+    background: #28a745;
   }
   
   /* Position and sizing of clickable cross button */
@@ -26,6 +27,7 @@
   /* Color/shape of close button cross */
   .bm-cross {
     background: #bdc3c7;
+    margin-left: -60px;
   }
   
   /*
@@ -42,6 +44,7 @@
     background: linear-gradient(to left, #000000, #434343);
     padding: 2.5em 1.5em 0;
     font-size: 1.15em;
+    width: 85%;
   }
   
   /* Morph shape necessary with bubble or elastic */
@@ -68,17 +71,18 @@
 }
   #home {
       color: aliceblue;
-      margin-left: -10px;
+      margin-left: 0px;
       font-weight: bold;
   }
   #principal {
     color: aliceblue;
-    margin-left: -10px;
+    margin-left: 0px;
   }
 
   #submenu {
     color: aliceblue;
     margin-left: 15px;
+    font-size: 17px;
   }
   
   a:hover {

@@ -12,7 +12,7 @@ import Planta from '../Gallery/Planta.png'
 import Regalo from '../Gallery/Regalo.png'
 
 const Instructions = () => (
-    <Container fluid>
+    
         <Row id="cajaiconos">
             <Col sm>
                 <input id="iconos" type="image" src={Planta} style={{ width: '8rem' }} ></input>
@@ -31,7 +31,7 @@ const Instructions = () => (
                 <h6>Entrega puntual</h6>
             </Col>
         </Row>
-    </Container>
+    
 );
 
 export default Instructions;
